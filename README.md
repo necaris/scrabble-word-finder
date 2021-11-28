@@ -9,3 +9,7 @@ all-7 gets a bonus
 rust backend
 existing elm frontend
 ocaml (bucklescript + TEA) frontend in progress?
+
+# update, 2021/11
+
+this is a toy project that I'm just uploading now.
