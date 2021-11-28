@@ -1,0 +1,6 @@
+[*.{html,js,css}]
+indent_style = space
+indent_size = 2
+
+[*.{rs,elm}]
+indent_size = 4
