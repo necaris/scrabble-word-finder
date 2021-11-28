@@ -1,0 +1,32 @@
+{
+  "name": "scrabble-word-finder",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "serve": "parcel static/index-ocaml.html",
+    "rebuild": "clean build",
+    "serve:watch": "run-p watch serve",
+    "release:html": "parcel build static/index-ocaml.html --no-source-maps --experimental-scope-hoisting",
+    "release:bs": "run-s clean build",
+    "build:release": "run-s release:bs release:html"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "bs-platform": "^7.2.2",
+    "bsb-js": "^1.1.7",
+    "bucklescript-tea": "^0.15.0",
+    "fastpack": "^0.9.1",
+    "google-closure-compiler": "^20200504.0.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^1.12.4",
+    "reason-cli": "^3.3.3-linux-1",
+    "serve": "^11.3.0"
+  }
+}
